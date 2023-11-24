@@ -2,4 +2,5 @@ function isValidHtml(html) {
   const regex = /<("[^"]*"|'[^']*'|[^'">])*>/g;
   return regex.test(html);
 }
-console.log(isValidHtml("Hello"));
+console.log("Is html valid: ", isValidHtml("<a></a>"));
+console.log("Is html valid: ", isValidHtml("test"));
